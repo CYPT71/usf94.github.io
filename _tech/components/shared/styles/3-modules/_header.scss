@@ -41,7 +41,7 @@
   cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-.notification-toggle:checked + .close-button + .notification-top-bar {
+.notification-toggle:checked  .close-button  .notification-top-bar {
   opacity: 0; /* Fully transparent */
   transform: translateY(-20px); /* Move up slightly */
   display: none;
