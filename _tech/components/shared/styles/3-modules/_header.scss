@@ -1,4 +1,3 @@
-/* Header */
 .notification-top-bar {
   top: 0;
   left: 0;
@@ -12,13 +11,13 @@
   font-size: 14px;
   padding: 8px;
   transition: opacity 0.5s ease, transform 0.5s ease;
-  opacity: 1; /* Fully visible */
-  transform: translateY(0); /* Original position */
 }
+
 .notification-top-bar p {
   padding: 0;
   margin: 0;
 }
+
 .notification-top-bar p a {
   padding: 5px 10px;
   border-radius: 3px;
@@ -30,26 +29,21 @@
 
 .notification-toggle {
   display: none; /* Hide the checkbox */
+}
 
-  &.checked {
-    .notification-top-bar {
-      display: none; /* Hide the notification top bar */
-      opacity: 0; /* Fully transparent */
-      transform: translateY(-20px); /* Move up slightly */
-      
-      // Add transition for smooth effect
-      transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-  }
+.notification-toggle:checked + .close-button + .notification-top-bar {
+    display: none; /* Hide the notification top bar */
+    opacity: 0; /* Fully transparent */
+    transform: translateY(-20px); /* Move up slightly */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
 .close-button {
-  position: absolute;
-  top: 10px; /* Adjust as needed */
-  right: 10px; /* Adjust as needed */
-  font-size: 20px; /* Size of the close icon */
-  color: white; /* Color of the close icon */
-  cursor: pointer; /* Change cursor to pointer on hover */
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    font-size: 20px; /* Size of the close icon */
+    color: white; /* Color of the close icon */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 
