@@ -32,6 +32,17 @@
 
 .notification-toggle {
   display: none; /* Hide the checkbox */
+
+  &.checked {
+    .notification-top-bar {
+      display: none; /* Hide the notification top bar */
+      opacity: 0; /* Fully transparent */
+      transform: translateY(-20px); /* Move up slightly */
+      
+      // Add transition for smooth effect
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+  }
 }
 
 .close-button {
@@ -43,13 +54,7 @@
   cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-.notification-toggle:checked  {
-  .notification-top-bar  {
-    display: none;
-  }
-  opacity: 0; /* Fully transparent */
-  transform: translateY(-20px); /* Move up slightly */
-}
+
 
 .c-header {
   height: auto;
