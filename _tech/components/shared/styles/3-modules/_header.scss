@@ -14,6 +14,8 @@
   transition: opacity 0.5s ease, transform 0.5s ease;
   opacity: 1; /* Fully visible */
   transform: translateY(0); /* Original position */
+
+  .
 }
 .notification-top-bar p {
   padding: 0;
@@ -29,7 +31,7 @@
 }
 
 .notification-toggle {
-  display: hidden; /* Hide the checkbox */
+  display: none; /* Hide the checkbox */
 }
 
 .close-button {
@@ -41,10 +43,12 @@
   cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-.notification-toggle:checked  .close-button  .notification-top-bar {
+.notification-toggle:checked  {
+  .notification-top-bar  {
+    display: none;
+  }
   opacity: 0; /* Fully transparent */
   transform: translateY(-20px); /* Move up slightly */
-  display: none;
 }
 
 .c-header {
