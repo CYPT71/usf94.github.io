@@ -1,0 +1,9 @@
+footer_menu__settings:
+  menu__items:
+    - title: 'Nous contacter'
+      url: '/#contact'
+    - title: 'Ressources'
+      url: '/ressources/'
+
+copyright_text_html: >-
+  <p> 2023 &copy; <a href="/">USF94 spéléologie</a></p>

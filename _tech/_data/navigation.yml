@@ -1,0 +1,22 @@
+logo_image: '/images/logo.jpg' 
+
+menu__settings:
+  menu__items:
+    - title: 'Accueil'
+      url: '/'
+    
+    - title: 'Decouvrir'
+      submenu:
+      - title: 'Nos évènements'
+        url: '/events/'
+
+      - title: 'Nos ressources'
+        url: '/ressources/'
+
+    # - title: 'Séjour et visite'
+    #   submenu:
+    #   - url: '/ressources/guide-de-visite'
+    #     title: 'Guide de visite'
+    #   - url: 'http://docs.usf94.github.io/'
+    #     url_type: 'external'
+    #     title: 'Charte'

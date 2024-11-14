@@ -1,0 +1,88 @@
+title: USF94
+
+plugins:
+  - jekyll-bookshop
+  - jekyll-sitemap
+  - jekyll-pagebreak
+
+# Structural
+collections_dir     : collections
+layouts_dir         : _tech/_layouts
+data_dir            : _tech/_data
+includes_dir        : _tech/_includes
+
+bookshop_locations:
+  - _tech/components
+
+exclude:
+  - postcss.config.js
+  - node_modules
+
+# Serving configuration
+baseurl: "https://cypt71.github.io/usf94.github.io"
+
+# The rest of this array structure will be
+# populated by the bookshop-array-structures plugin.
+_array_structures:
+  content_blocks:
+    style: modal
+
+collections:
+  pages:
+    output: true
+    permalink: /:title/
+  # inhabitants:
+  #   output: true
+  #   permalink: /inhabitants/:slug
+  ressources:
+    output: true
+    permalink: /ressources/:slug
+  events:
+    output: true
+    permalink: /events/:slug
+  tags:
+    output: true
+    permalink: /tag/:slug
+
+_collection_groups:
+  - heading: Content
+    collections:
+      - pages
+      - inhabitants
+      - events
+  - heading: Blogging
+    collections:
+      - ressources
+      - drafts
+      - tags
+  - heading: Settings
+    collections:
+      - data
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      type: pages
+      path: _pages/index.html
+    values:
+      permalink: /
+  # - scope:
+  #     type: inhabitants
+  #   values:
+  #     layout: project
+  - scope:
+      type: events
+    values:
+      layout: event
+  - scope:
+      type: ressources
+    values:
+      layout: post
+  - scope:
+      type: tags
+    values:
+      layout: tag_page
+

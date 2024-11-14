@@ -1,0 +1,29 @@
+/* Custom Color Scheme */
+$primary-color: #4a8c6f; /* Forest Green - Represents nature and exploration */
+$secondary-color: #2c3e50; /* Dark Slate Blue - Represents depth and stability */
+$white: #ffffff; /* White - Clean and fresh */
+$dark: #1c1c1c; /* Charcoal - Represents the unknown depths */
+$gray: #b0b3b8; /* Medium Gray - Neutral background elements */
+$light-gray: #e4e4e4; /* Light Gray - Soft background for sections */
+$blue-gray: #aab8c2; /* Soft Blue-Gray - For borders and subtle elements */
+
+$background-color: #f0f8ff; /* Light Sky Blue - Soft and inviting */
+$background-color-alt: $white; /* Alternative Background - Clean and simple */
+
+$text-color: $dark; /* Main Text Color - High contrast for readability */
+
+$heading-font-color: $text-color; /* Headings Color - Matches main text for consistency */
+
+$link-color: $primary-color; /* Links Color - Stand out against text */
+$link-color-hover: darken($primary-color, 10%); /* Darker on hover for interaction feedback */
+
+$button-color: $white; /* Button Text Color - Clean against button background */
+$button-background-color: $primary-color; /* Button Background Color - Eye-catching */
+$button-background-hover: darken($primary-color, 5%); /* Slightly darker on hover for effect */
+
+$border-color: $blue-gray; /* Borders Color - Soft contrast against backgrounds */
+
+$hr-color: $gray; /* Horizontal Rules Color - Subtle separation */
+$tr-color: #f9f9f9; /* Table Row Color - Light for readability */
+
+$syntax-highlighting-background: #f7f7f7; /* Background for code snippets - Soft contrast */
