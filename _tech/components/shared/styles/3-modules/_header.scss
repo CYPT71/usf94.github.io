@@ -29,7 +29,7 @@
 }
 
 .notification-toggle {
-  display: block; /* Hide the checkbox */
+  display: hidden; /* Hide the checkbox */
 }
 
 .close-button {
@@ -44,6 +44,7 @@
 .notification-toggle:checked + .close-button + .notification-top-bar {
   opacity: 0; /* Fully transparent */
   transform: translateY(-20px); /* Move up slightly */
+  display: none;
 }
 
 .c-header {
