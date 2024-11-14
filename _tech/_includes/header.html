@@ -4,8 +4,6 @@
   <!-- Notification bar -->
   {% if site.data.notification.active %}
   <div class="notification-top-bar" style="background-color: {{site.data.notification.color}};">
-    <input type="checkbox" id="notification-toggle" class="notification-toggle" />
-    <label for="notification-toggle" class="close-button">&times;</label>
     <p>{{ site.data.notification.message}}
       {% if site.data.notification.button_link %}
         <small>
@@ -13,6 +11,8 @@
         </small>
       {% endif %}
     </p>
+    <input type="checkbox" id="notification-toggle" class="notification-toggle" />
+    <label for="notification-toggle" class="close-button">&times;</label>
     
     
   </div>
